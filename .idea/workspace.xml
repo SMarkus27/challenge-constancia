@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30c35c78-2804-4d58-a769-cd3eaad451de" name="Changes" comment="chore: add poetry to manager packages">
-      <change afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/backend",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "/home/marcus/Desktop/Tudo/Programacao/Projetos/challenge-constancia/backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -70,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712147639876</updated>
       <workItem from="1712147641286" duration="623000" />
-      <workItem from="1712148883045" duration="16468000" />
+      <workItem from="1712148883045" duration="16584000" />
     </task>
     <task id="LOCAL-00001" summary="chore: client response and dto">
       <option name="closed" value="true" />
