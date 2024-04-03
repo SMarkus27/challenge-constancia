@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="30c35c78-2804-4d58-a769-cd3eaad451de" name="Changes" comment="chore: add poetry to manager packages">
+      <change afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2eafWJckcp6gxm2E1jyim9CcG84" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/backend",
+    "last_opened_file_path": "/home/marcus/Desktop/Tudo/Programacao/Projetos/challenge-constancia/backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/src/infra/web" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30c35c78-2804-4d58-a769-cd3eaad451de" name="Changes" comment="" />
+      <created>1712147639876</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712147639876</updated>
+      <workItem from="1712147641286" duration="623000" />
+      <workItem from="1712148883045" duration="16468000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: client response and dto">
+      <option name="closed" value="true" />
+      <created>1712173040133</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712173040133</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore: create client usecases">
+      <option name="closed" value="true" />
+      <created>1712173097572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712173097572</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: create client repository">
+      <option name="closed" value="true" />
+      <created>1712173139117</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712173139117</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: create client http route and controller">
+      <option name="closed" value="true" />
+      <created>1712173169640</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712173169640</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: create dockerfile">
+      <option name="closed" value="true" />
+      <created>1712173202922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712173202922</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: add poetry to manager packages">
+      <option name="closed" value="true" />
+      <created>1712173232417</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712173232417</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: client response and dto" />
+    <MESSAGE value="chore: create client usecases" />
+    <MESSAGE value="chore: create client repository" />
+    <MESSAGE value="chore: create client http route and controller" />
+    <MESSAGE value="chore: create dockerfile" />
+    <MESSAGE value="chore: add poetry to manager packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add poetry to manager packages" />
+  </component>
+</project>
