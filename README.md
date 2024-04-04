@@ -21,5 +21,5 @@ docker compose up -d
 * The application it's running on:
 
 ```
-HTTP:localhost:300
+HTTP:localhost:3000
 ```
