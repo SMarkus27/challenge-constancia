@@ -21,10 +21,13 @@ body {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
 }
 
 td,
+.input-search,
 th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -34,3 +37,10 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+.search-container {
+  margin: 20px;
+  padding-bottom: 16px;
+}
+
+

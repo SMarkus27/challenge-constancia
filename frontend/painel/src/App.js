@@ -23,7 +23,7 @@ function Table ({columns, data}) {
     return (
         <div>
             <div className="search-container">
-                <input
+                <input className="input-search"
                     placeholder="Buscar"
                     type="text"
                     value={globalFilter || ''}
@@ -82,7 +82,7 @@ function App() {
     return (
         <div className="App">
             <h1>
-                <center>React</center>
+                <center>Débitos Clientes</center>
             </h1>
             <Table columns={columns} data={data}/>
         </div>
