@@ -8,10 +8,8 @@ services:
       - 5432
     volumes:
       - ~/apps/postgres:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_PASSWORD=postgres_password
-      - POSTGRES_USER=postgres_user
-      - POSTGRES_DB=test
+    env_file:
+      - backend/.env
 
   frontend:
     container_name: frontend
