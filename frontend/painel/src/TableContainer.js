@@ -1,5 +1,5 @@
 import React from "react";
-import { useTable } from "react-table";
+import {useFilters, useTable} from "react-table";
 import {useGlobalFilter} from "react-table/src";
 
 export default function Table({ columns, data }) {
@@ -19,13 +19,6 @@ export default function Table({ columns, data }) {
     const { globalFilter } = state;
     return (
         <div className="container">
-            {/*<div className="search-container">*/}
-            {/*    <input*/}
-            {/*        type="text"*/}
-            {/*        value={globalFilter || ''}*/}
-            {/*        onChange={(e) => setGlobalFilter(e.target.value)}*/}
-            {/*    />*/}
-            {/*</div>*/}
             <table {...getTableProps()}>
                 <thead>
                 {headerGroups.map(headerGroup => (
@@ -37,7 +30,7 @@ export default function Table({ columns, data }) {
                                     {column.isSorted
                                         ? column.isSortedDesc
                                             ? ' 🔽'
-                                            : '🔼' : ":"}
+                                            : '🔼' : "🔽"}
                                 </span>
                             </th>
                         ))}

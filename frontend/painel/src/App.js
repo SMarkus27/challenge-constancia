@@ -1,54 +1,70 @@
 import React, {useState, useEffect, useMemo} from "react";
 import axios from "axios"
-import { useTable, useFilters, useSortBy } from "react-table";
+import { useTable, useGlobalFilter, useSortBy } from "react-table";
 
 import "./App.css";
-import FilterForm from "./FilterForm";
+import FilterForm from "./components/FilterForm";
+import {COLUMNS} from "./components/columns";
 function Table ({columns, data}) {
     const {
         getTableProps,
         getTableBodyProps,
         headerGroups,
         rows,
+        state,
+        setGlobalFilter,
         prepareRow
     } = useTable({
         columns,
         data
-    }, useSortBy)
+    }, useGlobalFilter, useSortBy)
+
+    const { globalFilter} = state;
     return (
-        <table {...getTableProps()}>
-            <thead>
-            {headerGroups.map(headerGroup => (
-                <tr {...headerGroup.getHeaderGroupProps()}>
-                    {headerGroup.headers.map(column => (
-                        <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                            {column.render('Header')}
-                            <span>
+        <div>
+            <div className="search-container">
+                <input
+                    placeholder="Buscar"
+                    type="text"
+                    value={globalFilter || ''}
+                    onChange={(e) => setGlobalFilter(e.target.value)}
+                />
+            </div>
+            <table {...getTableProps()}>
+                <thead>
+                {headerGroups.map(headerGroup => (
+                    <tr {...headerGroup.getHeaderGroupProps()}>
+                        {headerGroup.headers.map(column => (
+                            <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                                {column.render('Header')}
+
+                                <span>
                                     {column.isSorted
                                         ? column.isSortedDesc
                                             ? ' 🔽'
                                             : '🔼'
-                                        :":"}
+                                        : ":"}
                                         </span>
-                                        </th>
-                    ))}
-                </tr>
-            ))}
-            </thead>
-            <tbody {...getTableBodyProps()}>
-            {rows.map((row, i) => {
-                prepareRow(row)
-                return (
-                    <tr {...row.getRowProps()}>
-                        {row.cells.map(cell => {
-                            return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                        })}
+                            </th>
+                        ))}
                     </tr>
-                )
-            })}
+                ))}
+                </thead>
+                <tbody {...getTableBodyProps()}>
+                {rows.map((row, i) => {
+                    prepareRow(row)
+                    return (
+                        <tr {...row.getRowProps()}>
+                            {row.cells.map(cell => {
+                                return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                            })}
+                        </tr>
+                    )
+                })}
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     )
 }
 
@@ -62,41 +78,15 @@ function App() {
         }).catch((err) => console.log(err))
     }, []);
 
-    const columns = useMemo(
-        () => [
-            {
-                Header: "Buscar",
-                columns: [
-                    {
-                        Header: "Name",
-                        accessor: "name",
-                        Filter: FilterForm
-                        // Cell: ({cell: {value}}) => value ? {value}: ""
-
-                    },
-                    {
-                        Header: "Valor",
-                        accessor: "value",
-                        Filter: FilterForm
-
-                    },
-                    {
-                        Header: "Desde",
-                        accessor: "created_at",
-                        Filter: FilterForm
-
-
-                    }
-                ]
-            }
-        ]
-    )
+    const columns = useMemo(() => COLUMNS, [])
     return (
         <div className="App">
-            <h1><center>React</center></h1>
+            <h1>
+                <center>React</center>
+            </h1>
             <Table columns={columns} data={data}/>
         </div>
-)
+    )
 }
 
 
